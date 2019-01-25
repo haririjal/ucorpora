@@ -1,0 +1,53 @@
+/*
+Theme Name: Portfolio
+Theme URI: https://haririjal.com.np/wordpress-themes/personal-info-wordpress-theme/
+Author:Hari Rijal
+Author URI: http://haririjal.com.np/
+Description: Portfolio WordPress theme is exquisiteness and simplicity helps individuals represent their personal site at ease. A must-have for all individuals looking to exhibit and brand one's personal information. Aided with control from Theme options, the Personal info theme's unique feature is to diaplsy home, contact, portfolio, profile and blogs. All these acquainted with robust in-house responsive framework would serve its purpose to benefit your Biography. Now you can import demo by one click. For more detail: https://haririjal.com.np/wordpress-themes/personal-info-wordpress-theme/
+Version: 2.2.1
+License: GNU General Public License v2 or later
+License URI: http://www.haririjal.com.np/licenses/gpl-2.0.html
+Text Domain: Hari
+Tags:   custom-header, custom-background, custom-menu, translation-ready, featured-images, theme-options, custom-logo , portfolio, editor-style, right-sidebar, threaded-comments
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Portfolio by Hari Rijal is based on Underscores http://haririjal.com.np/, (C) 2012-2018 Automattic, Inc.
+Portfolio is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Hari Rijal http://haririjal.com.np/
+*/
+
+body{
+    font-size: 20 px;
+    background-color: azure;
+}
+
+.nav {
+    display: inline;
+    text-decoration: none;
+    background-color: blueviolet;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: red;
+    padding:10px 20px;
+    margin: 0;
+    border:12px dashed yellowgreen;
+    border-radius: 40%;
+    
+}
+.nav li a:hover{
+    color:yellowgreen;
+    padding: 10px 20px;
+    border:12px dashed red;
+    border-radius: 40%;
+    
+}
