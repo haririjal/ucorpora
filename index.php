@@ -6,6 +6,8 @@ get_header();
 
 
 <!-- HOME SECTION -->
+
+
 <section id="home" class="parallax-section">
      <div class="container">
           <div class="row">
@@ -21,6 +23,32 @@ get_header();
           </div>
      </div>
 </section>
+
+<!--MENU SECTION -->
+
+<!-- <nav class="navbar navbar-default navbar-fixed-top">
+<div class="menu">
+     <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+     </ul>
+
+</div>
+</nav> -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="menu">
+     <ul>
+          <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
+     </ul>
+
+</div>
+</nav> -->
+
 
 
 <!-- SERVICE SECTION -->
@@ -185,7 +213,7 @@ the_post();?>
 
 
                <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
-                    <!-- WORK THUMB -->
+                    <!-- BLOG THUMB -->
                     <div class="work-thumb">
                          <a href="<?php echo get_theme_file_uri('/images/work-image1.jpg'); ?>" class="image-popup">
                               <div class="work-thumb-overlay">

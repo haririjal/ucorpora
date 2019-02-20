@@ -503,3 +503,22 @@ footer p {
     height: 125vh;
   }
 }
+
+
+
+.menu{
+  float: left;
+}
+
+.menu ul{
+  margin: 5px;
+}
+
+.menu ul li{
+  display: inline-block;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: red;
+}

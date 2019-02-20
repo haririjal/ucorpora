@@ -32,5 +32,20 @@ function portfolio_style(){
 
 add_action('wp_enqueue_scripts', 'portfolio_style');
 
+
+add_theme_support('menus');
+
+register_nav_menus(
+
+    array(
+
+        'primary-menu' => __('Primary Menu', 'theme'),
+        'footer-menu' => __('Footer Menu', 'theme'),
+        'side-menu' => __('Sidebar Menu', 'theme')
+    )
+
+
+);
+
 ?>
 
