@@ -2,6 +2,11 @@ This is footer.
  <!-- FOOTER SECTION -->
 <footer>
     <div class="container">
+
+      <ul>
+          <?php wp_nav_menu( array( 'theme_location' => '
+          ' ) ); ?>
+     </ul>
         <div class="row">
 
                <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.8s">

@@ -14,7 +14,7 @@ get_header();
 
                <div class="col-md-offset-5 col-md-7 col-sm-12">
                     <div class="home-thumb">
-                         <h1 class="wow fadeInUp" data-wow-delay="0.4s">Hello, I am Dipendra.</h1>
+                         <h1 class="wow fadeInUp" data-wow-delay="0.4s">Yes, I am Jhyap.</h1>
                          <p class="wow fadeInUp white-color" data-wow-delay="0.6s">Praesent eleifend tristique nisl, nec finibus urna posuere nec. Quisque vel nunc eget arcu maximus facilisis non eu nisi. Aliquam ullamcorper est a nisl imperdiet luctus.</p>
                          <a href="#service" class="wow fadeInUp smoothScroll btn btn-default section-btn" data-wow-delay="1s">discover more</a>
                     </div>
@@ -207,12 +207,15 @@ get_header();
                     </div>
                </div>
 
-               <?php 
-while(have_posts()){
-the_post();?>
+<?php
 
+$customPosts = new WP_Query('posts_per_page=3');
 
-               <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
+if ($customPosts->have_posts()) :
+
+while ($customPosts->have_posts()) : $customPosts->the_post(); ?>
+
+     <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
                     <!-- BLOG THUMB -->
                     <div class="work-thumb">
                          <a href="<?php echo get_theme_file_uri('/images/work-image1.jpg'); ?>" class="image-popup">
@@ -227,9 +230,15 @@ the_post();?>
                     </div>
                </div>
 
-               <?php
-}
+<?php endwhile;
+
+else :
+                                        // fallback no content message here
+     endif;
+wp_reset_postdata();
 ?>
+               
+       
 
           </div>
      </div>

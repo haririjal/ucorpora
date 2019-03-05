@@ -522,3 +522,20 @@ footer p {
   text-decoration: none;
   color: red;
 }
+
+/* Contact Us Page Styles*/
+.jumbotron {
+background: #358CCE;
+color: #FFF;
+border-radius: 0px;
+}
+.jumbotron-sm { padding-top: 24px;
+padding-bottom: 24px; }
+.jumbotron small {
+color: #FFF;
+}
+.h1 small {
+font-size: 24px;
+}
+
+/*End of the Contact Us Page Styles*/
